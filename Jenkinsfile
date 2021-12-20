@@ -1,6 +1,10 @@
 
-stage('build') {
-    steps {
-            sh 'python web.py'
-	        }
-		}
+pipeline {
+    stages {
+            stage('build') {
+	                steps {
+			                sh 'python web.py'
+					            }
+						            }
+							        }
+								}
